@@ -8,61 +8,13 @@
 
 <ion-content>
   <div id="container">
-    <ion-card>
-      <img src="assets\world.png" class="planet"/>
+    <ion-card *ngFor="let item of planets">
+      <img src="assets/world.png" class="planet"/>
       <ion-card-header>
         <ion-card-subtitle>Image From FlatIcons</ion-card-subtitle>
-        <ion-card-title>Mercury</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    <ion-card>
-      <img src="assets\world.png" class="planet"/>
-      <ion-card-header>
-        <ion-card-subtitle>Image From FlatIcons</ion-card-subtitle>
-        <ion-card-title>Venus</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    <ion-card>
-      <img src="assets\world.png" class="planet"/>
-      <ion-card-header>
-        <ion-card-subtitle>Image From FlatIcons</ion-card-subtitle>
-        <ion-card-title>Earth</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    <ion-card>
-      <img src="assets\world.png" class="planet"/>
-      <ion-card-header>
-        <ion-card-subtitle>Image From FlatIcons</ion-card-subtitle>
-        <ion-card-title>Mars</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    <ion-card>
-      <img src="assets\world.png" class="planet"/>
-      <ion-card-header>
-        <ion-card-subtitle>Image From FlatIcons</ion-card-subtitle>
-        <ion-card-title>Jupiter</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    <ion-card>
-      <img src="assets\world.png" class="planet"/>
-      <ion-card-header>
-        <ion-card-subtitle>Image From FlatIcons</ion-card-subtitle>
-        <ion-card-title>Saturn</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    <ion-card>
-      <img src="assets\world.png" class="planet"/>
-      <ion-card-header>
-        <ion-card-subtitle>Image From FlatIcons</ion-card-subtitle>
-        <ion-card-title>Uranus</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    <ion-card>
-      <img src="assets\world.png" class="planet"/>
-      <ion-card-header>
-        <ion-card-subtitle>Image From FlatIcons</ion-card-subtitle>
-        <ion-card-title>Neptune</ion-card-title>
+        <ion-button color="dark" (click)="nextpage(item.id)">{{ item.name }}</ion-button>
       </ion-card-header>
     </ion-card>
   </div>
 </ion-content>
+ 

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ planet.name }}</ion-title>
+    <ion-button color="dark" (click)="homepage()">Home</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+  <ion-card>
+    <img src="{{ planet.img }}"/>
+    <div class="card-title">{{ planet.name }}</div>
+    <div class="card-subtitle">{{ planet.description }}</div>
+    <div class="card-mini">Image from https://www.popsci.com/science/article/2013-03/most-incredible-pictures-every-planet-our-solar-system/</div>
+  </ion-card>
+</ion-content>
